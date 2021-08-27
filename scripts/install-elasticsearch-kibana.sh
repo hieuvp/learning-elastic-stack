@@ -33,3 +33,8 @@ echo "kubectl port-forward --namespace=elastic-stack svc/kibana-kibana 5601"
 echo "Access: http://localhost:5601"
 
 printf "\n"
+echo "Welcome to Elastic"
+echo "Username: elastic"
+echo "Password: Passw0rd"
+
+printf "\n"
