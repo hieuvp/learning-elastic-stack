@@ -1,0 +1,6 @@
+[submodule "data-visualization-with-kibana"]
+	path = data-visualization-with-kibana
+	url = git@github.com:codingexplained/data-visualization-with-kibana.git
+[submodule "helm-charts"]
+	path = helm-charts
+	url = git@github.com:elastic/helm-charts.git
