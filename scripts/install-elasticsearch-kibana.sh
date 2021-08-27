@@ -6,15 +6,15 @@ set -eoux pipefail
 # minikube start --driver=virtualbox
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-cd helm-charts
+kubectl create namespace elastic-stack
 
-helm install elasticsearch ./elasticsearch \
+helm install elasticsearch ./helm-charts/elasticsearch \
   --namespace=elastic-stack \
-  --values=elasticsearch-values.yaml
+  --values=scripts/values/elasticsearch.yaml
 
-helm install kibana ./kibana \
+helm install kibana ./helm-charts/kibana \
   --namespace=elastic-stack \
-  --values=kibana-values.yaml
+  --values=scripts/values/kibana.yaml
 
 set +x
 
