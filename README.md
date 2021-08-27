@@ -10,3 +10,5 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## References
+
+- [Data Visualization with Kibana](https://mckinsey.udemy.com/course/data-visualization-with-kibana/)

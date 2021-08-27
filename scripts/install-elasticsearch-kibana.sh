@@ -3,7 +3,7 @@
 set -eoux pipefail
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# minikube start --driver=virtualbox
+# minikube start --driver=virtualbox --cpus=3 --memory=5000
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 kubectl create namespace elastic-stack
