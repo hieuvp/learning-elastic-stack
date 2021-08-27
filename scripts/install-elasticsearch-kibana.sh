@@ -6,7 +6,13 @@ set -eoux pipefail
 # minikube start --driver=virtualbox --cpus=3 --memory=5000
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+kubectl delete namespace elastic-stack || true
 kubectl create namespace elastic-stack
+
+kubectl create secret generic elastic-credentials \
+  --from-literal=username=elastic \
+  --from-literal=password=Passw0rd \
+  --namespace=elastic-stack
 
 helm install elasticsearch ./helm-charts/elasticsearch \
   --namespace=elastic-stack \
