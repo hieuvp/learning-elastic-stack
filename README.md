@@ -1,2 +1,1 @@
-# learning-elastic-stack
-Learning Elastic Stack
+# Learning Elastic Stack
